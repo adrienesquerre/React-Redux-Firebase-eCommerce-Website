@@ -9,6 +9,7 @@ import HomepageLayout from './layouts/HomepageLayout';
 
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
+import Login from './pages/Login';
 import './default.scss';
 
 function App() {
@@ -19,12 +20,17 @@ function App() {
           <HomepageLayout>
             <Homepage />
           </HomepageLayout>
-        ) } />       
+        )} />       
         <Route path="/registration" render={() => (
           <MainLayout>
             <Registration />
           </MainLayout>
-         )} />
+        )} />
+         <Route path="/login" render={() => (
+          <MainLayout>
+            <Login />
+          </MainLayout>
+        )} />
         </Switch>
     </div>
   );
